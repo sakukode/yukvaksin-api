@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vaccinations",
+      "handler": "vaccination.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vaccinations/count",
+      "handler": "vaccination.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vaccinations/:id",
+      "handler": "vaccination.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vaccinations",
+      "handler": "vaccination.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vaccinations/:id",
+      "handler": "vaccination.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vaccinations/:id",
+      "handler": "vaccination.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

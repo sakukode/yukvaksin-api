@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vaccinations",
+  "info": {
+    "name": "vaccination",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "phone": {
+      "type": "string"
+    },
+    "types": {
+      "type": "string",
+      "required": true
+    },
+    "documents": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
